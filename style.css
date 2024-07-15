@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* Root Variables */
+:root {
+  /* Primary Colors */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+
+  /* Typography */
+  --font-montserrat: "Montserrat";
+  --font-fraunces: "Faunces";
+  --font-regular: 500;
+  --font-bold: 700;
+  --font-size: 14px;
+  /* --font-size: clamp(12px, 3.5vw, 14px); */
+}
+
+/* Styling Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-outfit);
+}
+
+/* General Styling */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: var(--dark-grayish-blue);
+}
+
+/* Card */
+.card {
+}
+
+/* Pricing */
+.discounted-price {
+  color: var(--dark-cyan);
+  font-weight: var(--font-bold);
+}
+
+.full-price {
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  text-decoration: none;
+}
+
+.btn-text {
+  color: var(--white);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--dark-grayish-blue);
+  margin: 20px;
+}
+.attribution a {
+  color: var(--dark-cyan);
+  text-decoration: none;
+  font-weight: var(--font-bold);
+}
