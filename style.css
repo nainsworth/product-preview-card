@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 /* Root Variables */
 :root {
@@ -28,7 +28,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-outfit);
+  font-family: var(--font-montserrat);
 }
 
 /* General Styling */
@@ -59,30 +59,77 @@ p {
 
 /* Card */
 .card {
+  display: flex;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 450px;
+}
+
+/* Product Img */
+.product-img {
+  flex: 1;
+}
+
+.product-img-desktop {
+  height: 100%;
+}
+
+/* Product Info */
+.product-info {
+  background-color: var(--white);
+  /* height: 100%; */
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: var(--font-fraunces);
 }
 
 /* Pricing */
+.pricing {
+  display: flex;
+  gap: 10px;
+}
+
 .discounted-price {
   color: var(--dark-cyan);
   font-weight: var(--font-bold);
+  font-size: 34px;
+  font-family: var(--font-fraunces);
 }
 
 .full-price {
+  margin: 8px;
+  text-decoration: line-through;
 }
 
 /* Add to Cart Button */
 .add-to-cart-btn {
   text-decoration: none;
+  background-color: var(--dark-cyan);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  gap: 12px;
 }
 
 .btn-text {
   color: var(--white);
+  font-weight: var(--font-bold);
 }
 
 /* Footer */
 footer {
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 10px;
 }
 .attribution {
   font-size: 11px;
